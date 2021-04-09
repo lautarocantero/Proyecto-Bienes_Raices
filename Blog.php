@@ -1,40 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
+<?php  
+    require 'includes/funciones.php';
     
-    <header class="header">
+    incluirTemplate('header');
+?> 
 
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/">
-                    <img src="/build/img/logo.svg" alt="logotipo bienes raices">
-                </a>
-                <div class="mobile-menu">
-                    <img src="/build/img/barras.svg" alt="barras hamburguesa">
-                </div>
-
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/dark-mode.svg" alt="dark mode">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-
-            </div>  <!--barra-->
-
-        </div>  <!--contenido-header-->
-
-    </header>
 
     <main class="contenedor contenido-centrado">
         <h1>Nuestro Blog</h1>
@@ -50,7 +19,7 @@
                     </picture>
                 </div>  <!--imagen-->
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Terraza en el techo de tu casa</h4>
                         <p>Escrito el <span>01/04/2021</span> Por: <span>Admin</span></p>
                     </a>
@@ -69,7 +38,7 @@
                     </picture>
                 </div>  <!--imagen-->
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Guia para la decoración de tu hogar</h4>
                         <p>Escrito el <span>01/04/2021</span> Por: <span>Admin</span></p>
                     </a>
@@ -88,7 +57,7 @@
                     </picture>
                 </div>  <!--imagen-->
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Guia para la decoración de tu hogar</h4>
                         <p>Escrito el <span>01/04/2021</span> Por: <span>Admin</span></p>
                     </a>
@@ -107,7 +76,7 @@
                     </picture>
                 </div>  <!--imagen-->
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Guia para la decoración de tu hogar</h4>
                         <p>Escrito el <span>01/04/2021</span> Por: <span>Admin</span></p>
                     </a>
@@ -118,18 +87,6 @@
             </article>  <!--ARTICLE-->
     </main>
 
-    <footer class="footer section">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los derechos reservados 2021 &copy; </p>
-    </footer>
+    <?php  incluirTemplate('footer'); ?> 
 
-    <script src="build/js/bundle.min.js"></script>
-</body>
-</html>
+    
